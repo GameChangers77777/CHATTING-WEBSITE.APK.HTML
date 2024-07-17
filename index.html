@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys' Brigade Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        </div>
+        <div id="status" class="status-box"></div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Boys' Brigade</h1>
+            <button id="installBtn" style="display: none;">Install App</button>
+        </header>
+        <div class="settings">
+            <label>
+                <input type="checkbox" id="notificationToggle" onchange="toggleNotifications()"> Enable Notifications
+            </label>
+        </div>
+        <div class="status-container">
+            <input type="text" id="statusInput" placeholder="Update your status..." />
+            <button onclick="setStatus()">Set Status</button>
+        </div>
+        <div class="chat-container">
+            <div id="chat" class="chat-box"></div>
+            <input type="text" id="message" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="startCall()">Video Call</button>
+            <button onclick="startVoiceCall()">Voice Call</button>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <script src="app.js"></script>
+</body>
+</html>

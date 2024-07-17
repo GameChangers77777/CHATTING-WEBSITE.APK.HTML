@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #075E54;
+    color: white;
+}
+.user-controls button {
+    margin-left: 5px;
+}
+.tabs {
+    display: flex;
+    background: #f8f9fa;
+}
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+.tabs button:hover, .tabs button.active {
+    background: #d9d9d9;
+}
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+.section {
+    display: none;
+    padding: 20px;
+}
+.section.active {
+    display: block;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+}
+.chat-box {
+    flex: 1;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f8f9fa;
+}
+input[type="text"], input[type="file"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #075E54;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #004d40;
+}
+#statusDisplay {
+    margin-top: 10px;
+}
+#friendList {
+    list-style: none;
+    padding: 0;
+}
+#friendList li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+#friendList li:hover {
+    background: #f1f1f1;
+}
+#videoList {
+    display: flex;
+    flex-direction: column;
+}
+video {
+    width: 100%;
+    max-height: 300px;
+    display: none;
+}
